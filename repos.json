@@ -1,9 +1,9 @@
 [  
     {
     "kernelSource": {
-      "name": "lineage-KernelSU",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
-      "branch": "lineage-20",
+      "name": "Kernel",
+      "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
+      "branch": "udc",
       "device": "lavender"
     },
     "withKernelSU": true,
@@ -15,7 +15,7 @@
       },
       {
         "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "11",
+        "branch": "14",
         "name": "clang"
       }
     ],

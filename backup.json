@@ -1,3 +1,4 @@
+    // failed
     {
     "kernelSource": {
       "name": "Kernel",
@@ -5,3 +6,12 @@
       "branch": "udc",
       "device": "lavender"
     },
+
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/Coptan99/android_kernel_xiaomi_sdm660",
+      "branch": "udc",
+      "device": "lavender"
+    },        

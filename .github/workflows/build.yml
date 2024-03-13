@@ -44,8 +44,8 @@ jobs:
 
       DEFCONFIG_NAME_ORG: ${{ matrix.repos.kernelSource.device }}_defconfig
       DEFCONFIG_NAME_0: lavender-perf_defconfig
-      DEFCONFIG_NAME: sdm660_defconfig
-      DEFCONFIG_NAME_2: sdm660-perf_defconfig
+      DEFCONFIG_NAME_1: sdm660_defconfig
+      DEFCONFIG_NAME: sdm660-perf_defconfig
       DEFCONFIG_NAME_LAVENDER: vendor/sdm660_defconfig
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}

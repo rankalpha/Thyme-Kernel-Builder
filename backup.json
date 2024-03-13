@@ -1,0 +1,7 @@
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
+      "branch": "udc",
+      "device": "lavender"
+    },

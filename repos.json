@@ -2,10 +2,10 @@
     {
     "kernelSource": {
       "name": "Kernel",
-      "repo": "https://github.com/MoKee/android_kernel_xiaomi_lavender",
-      "branch": "mkq-mr1",
+      "repo": "https://github.com/Coptan99/android_kernel_xiaomi_sdm660",
+      "branch": "udc",
       "device": "lavender"
-    },
+    },    
     "withKernelSU": true,
     "toolchains": [
       {

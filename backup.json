@@ -15,3 +15,12 @@
       "branch": "udc",
       "device": "lavender"
     },        
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/MoKee/android_kernel_xiaomi_lavender",
+      "branch": "mkq-mr1",
+      "device": "lavender"
+    },        

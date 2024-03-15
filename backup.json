@@ -43,7 +43,27 @@
       "branch": "lineage-20",
       "device": "lavender"
     }, 
-        
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
+      "defconfig": "vendor/xiaomi/sdm660_defconfig",
+      "branch": "lineage-20",
+      "device": "lavender"
+    }, 
+  CC      drivers/hwtracing/coresight/coresight-remote-etm.o
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/drivers/input/fingerprint/fpc/fpc1020_platform_tee.c:630:2: error: implicit declaration of function 'mdss_prim_panel_fb_unblank' [-Werror,-Wimplicit-function-declaration]
+        mdss_prim_panel_fb_unblank(FP_UNLOCK_REJECTION_TIMEOUT);
+        ^
+1 error generated.
+make[5]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:339: drivers/input/fingerprint/fpc/fpc1020_platform_tee.o] Error 1
+make[4]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:642: drivers/input/fingerprint/fpc] Error 2
+make[3]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:642: drivers/input/fingerprint] Error 2
+make[2]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:642: drivers/input] Error 2
+make[2]: *** Waiting for unfinished jobs....
+
     // failed
     {
     "kernelSource": {

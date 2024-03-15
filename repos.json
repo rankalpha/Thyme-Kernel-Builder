@@ -2,10 +2,10 @@
     {
     "kernelSource": {
       "name": "Kernel",
-      "repo": "https://github.com/PixelExperience-Devices/kernel_xiaomi_lavender",
-      "branch": "thirteen",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
+      "branch": "lineage-20",
       "device": "lavender"
-    },    
+    }, 
     "withKernelSU": true,
     "toolchains": [
       {

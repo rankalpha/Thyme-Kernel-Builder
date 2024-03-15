@@ -52,3 +52,145 @@ make[2]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel
 make[1]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/Makefile:1212: kernel] Error 2
 make[1]: *** Waiting for unfinished jobs....
 
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
+      "branch": "lineage-18.1",
+      "device": "lavender"
+    },    
+        
+  HOSTLD  scripts/mod/modpost
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c: In function ‘display_openssl_errors’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:46:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   46 |         while ((e = ERR_get_error_line(&file, &line))) {
+      |         ^~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:23:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c: In function ‘drain_openssl_errors’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:59:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   59 |         while (ERR_get_error_line(&file, &line)) {}
+      |         ^~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:23:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c: In function ‘main’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:124:17: warning: ‘ENGINE_load_builtin_engines’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  124 |                 ENGINE_load_builtin_engines();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:358:28: note: declared here
+  358 | OSSL_DEPRECATEDIN_3_0 void ENGINE_load_builtin_engines(void);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:126:17: warning: ‘ENGINE_by_id’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  126 |                 e = ENGINE_by_id("pkcs11");
+      |                 ^
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:336:31: note: declared here
+  336 | OSSL_DEPRECATEDIN_3_0 ENGINE *ENGINE_by_id(const char *id);
+      |                               ^~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:128:17: warning: ‘ENGINE_init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  128 |                 if (ENGINE_init(e))
+      |                 ^~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:620:27: note: declared here
+  620 | OSSL_DEPRECATEDIN_3_0 int ENGINE_init(ENGINE *e);
+      |                           ^~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:133:25: warning: ‘ENGINE_ctrl_cmd_string’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  133 |                         ERR(!ENGINE_ctrl_cmd_string(e, "PIN", key_pass, 0), "Set PKCS#11 PIN");
+      |                         ^~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:479:5: note: declared here
+  479 | int ENGINE_ctrl_cmd_string(ENGINE *e, const char *cmd_name, const char *arg,
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:134:17: warning: ‘ENGINE_ctrl_cmd’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  134 |                 ENGINE_ctrl_cmd(e, "LOAD_CERT_CTRL", 0, &parms, NULL, 1);
+      |                 ^~~~~~~~~~~~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:450:27: note: declared here
+  450 | OSSL_DEPRECATEDIN_3_0 int ENGINE_ctrl_cmd(ENGINE *e, const char *cmd_name,
+      |                           ^~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c: In function ‘display_openssl_errors’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:83:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   83 |         while ((e = ERR_get_error_line(&file, &line))) {
+      |         ^~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:27:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c: In function ‘drain_openssl_errors’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:96:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   96 |         while (ERR_get_error_line(&file, &line)) {}
+      |         ^~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:27:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c: In function ‘main’:
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:207:17: warning: ‘ENGINE_load_builtin_engines’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  207 |                 ENGINE_load_builtin_engines();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:28:
+/usr/include/openssl/engine.h:358:28: note: declared here
+  358 | OSSL_DEPRECATEDIN_3_0 void ENGINE_load_builtin_engines(void);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:209:17: warning: ‘ENGINE_by_id’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  209 |                 e = ENGINE_by_id("pkcs11");
+      |                 ^
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:28:
+/usr/include/openssl/engine.h:336:31: note: declared here
+  336 | OSSL_DEPRECATEDIN_3_0 ENGINE *ENGINE_by_id(const char *id);
+      |                               ^~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:211:17: warning: ‘ENGINE_init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  211 |                 if (ENGINE_init(e))
+      |                 ^~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:28:
+/usr/include/openssl/engine.h:620:27: note: declared here
+  620 | OSSL_DEPRECATEDIN_3_0 int ENGINE_init(ENGINE *e);
+      |                           ^~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:216:25: warning: ‘ENGINE_ctrl_cmd_string’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  216 |                         ERR(!ENGINE_ctrl_cmd_string(e, "PIN", key_pass, 0), "Set PKCS#11 PIN");
+      |                         ^~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:28:
+/usr/include/openssl/engine.h:479:5: note: declared here
+  479 | int ENGINE_ctrl_cmd_string(ENGINE *e, const char *cmd_name, const char *arg,
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:217:17: warning: ‘ENGINE_load_private_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  217 |                 private_key = ENGINE_load_private_key(e, private_key_name, NULL,
+      |                 ^~~~~~~~~~~
+In file included from /home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/sign-file.c:28:
+/usr/include/openssl/engine.h:638:11: note: declared here
+  638 | EVP_PKEY *ENGINE_load_private_key(ENGINE *e, const char *key_id,
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+  LDS     arch/arm64/kernel/vdso/vdso.lds
+  VDSOC   arch/arm64/kernel/vdso/vgettimeofday.o
+  VDSOA   arch/arm64/kernel/vdso/note.o
+  VDSOA   arch/arm64/kernel/vdso/sigreturn.o
+/tmp/vgettimeofday-ba3cf0.s: Assembler messages:
+/tmp/vgettimeofday-ba3cf0.s:18: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:18: Error: file number less than one
+/tmp/vgettimeofday-ba3cf0.s:19: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:20: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:21: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:22: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:69: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:82: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:154: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:185: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:1115: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:1116: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:1117: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:1118: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-ba3cf0.s:1134: Error: junk at end of line, first unrecognized character is `"'
+clang-14: error: assembler command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/arch/arm64/kernel/vdso/Makefile:70: arch/arm64/kernel/vdso/vgettimeofday.o] Error 1
+make[1]: *** [arch/arm64/Makefile:183: vdso_prepare] Error 2
+make[1]: Leaving directory '/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/out'
+make: *** [Makefile:152: sub-make] Error 2
+Error: Process completed with exit code 2.
+0s
+

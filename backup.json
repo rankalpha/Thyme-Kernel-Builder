@@ -97,6 +97,16 @@
       "branch": "lineage-18.1",
       "device": "lavender"
     }, 
+
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
+      "defconfig": "lavender_defconfig",
+      "branch": "lineage-17.1",
+      "device": "lavender"
+    }, 
         
     // failed
     {

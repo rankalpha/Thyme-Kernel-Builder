@@ -117,7 +117,35 @@
       "branch": "lineage-17.1",
       "device": "lavender"
     }, 
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
+      "defconfig": "lavender_defconfig",
+      "branch": "lineage-20",
+      "device": "lavender"
+    },
         
+  CC      fs/proc/proc_tty.o
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/kernel/sched/core.c:6929:40: error: implicit declaration of function 'nohz_flags' [-Werror,-Wimplicit-function-declaration]
+                if (!atomic_fetch_or(NOHZ_KICK_MASK, nohz_flags(cpu)))
+                                                     ^
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/kernel/sched/core.c:6929:40: note: did you mean 'iocb_flags'?
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/include/linux/fs.h:3387:19: note: 'iocb_flags' declared here
+static inline int iocb_flags(struct file *file)
+                  ^
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/kernel/sched/core.c:6929:24: error: use of undeclared identifier 'NOHZ_KICK_MASK'
+                if (!atomic_fetch_or(NOHZ_KICK_MASK, nohz_flags(cpu)))
+                                     ^
+  CC      block/blk-softirq.o
+2 errors generated.
+make[3]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:338: kernel/sched/core.o] Error 1
+make[2]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:642: kernel/sched] Error 2
+make[1]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/Makefile:1212: kernel] Error 2
+make[1]: *** Waiting for unfinished jobs....
+
     // failed
     {
     "kernelSource": {

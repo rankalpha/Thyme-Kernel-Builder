@@ -7,6 +7,16 @@
       "device": "lavender"
     },
 
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/rankalpha/PixelExperience_kernel_xiaomi_lavender",
+      "defconfig": "lavender_defconfig",
+      "branch": "thirteen-patch",
+      "device": "lavender"
+    }, 
+        
     // success 
     {
     "kernelSource": {

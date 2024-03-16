@@ -2,9 +2,9 @@
     {
     "kernelSource": {
       "name": "Kernel",
-      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_sdm660",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
       "defconfig": "lavender_defconfig",
-      "branch": "12.1",
+      "branch": "lineage-18.1",
       "device": "lavender"
     }, 
     "withKernelSU": true,

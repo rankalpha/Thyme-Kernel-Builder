@@ -120,6 +120,27 @@ clang-14: error: assembler command failed with exit code 1 (use -v to see invoca
     {
     "kernelSource": {
       "name": "Kernel",
+      "repo": "https://github.com/rankalpha/LineageOS_android_kernel_xiaomi_sdm660",
+      "defconfig": "lavender_defconfig",
+      "branch": "lineage-20",
+      "device": "lavender"
+    }, 
+  CC      lib/audit.o
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_i2c.c:366:11: error: implicit declaration of function 'of_drm_find_panel' [-Werror,-Wimplicit-function-declaration]
+                panel = of_drm_find_panel(node);
+                        ^
+/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_i2c.c:366:9: warning: incompatible integer to pointer conversion assigning to 'struct drm_panel *' from 'int' [-Wint-conversion]
+                panel = of_drm_find_panel(node);
+                      ^ ~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
+make[5]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:338: drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_i2c.o] Error 1
+make[4]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/scripts/Makefile.build:642: drivers/input/touchscreen/synaptics_tcm] Error 2
+make[4]: *** Waiting for unfinished jobs....
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
       "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
       "defconfig": "vendor/xiaomi/sdm660_defconfig",
       "branch": "lineage-20",

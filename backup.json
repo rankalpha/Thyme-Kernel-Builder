@@ -25,7 +25,40 @@
       "branch": "thirteen",
       "device": "lavender"
     },   
+    "toolchains": [
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
+      },
+      {
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "14",
+        "name": "clang"
+      }
+    ],
         
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/PixelExperience-Devices/kernel_xiaomi_lavender",
+      "defconfig": "lavender_defconfig",
+      "branch": "twelve",
+      "device": "lavender"
+    }, 
+    "toolchains": [
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
+      },
+      {
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "12",
+        "name": "clang"
+      }
+    ],        
     // success
     {
     "kernelSource": {

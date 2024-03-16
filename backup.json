@@ -58,6 +58,35 @@
     {
     "kernelSource": {
       "name": "Kernel",
+      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_sdm660",
+      "defconfig": "lavender_defconfig",
+      "branch": "12.1",
+      "device": "lavender"
+    }, 
+
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+/tmp/vgettimeofday-f54f2a.s: Assembler messages:
+/tmp/vgettimeofday-f54f2a.s:18: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:18: Error: file number less than one
+/tmp/vgettimeofday-f54f2a.s:19: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:20: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:21: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:22: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:69: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:82: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:154: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:185: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:1115: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:1116: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:1117: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:1118: Error: junk at end of line, first unrecognized character is `"'
+/tmp/vgettimeofday-f54f2a.s:1134: Error: junk at end of line, first unrecognized character is `"'
+clang-14: error: assembler command failed with exit code 1 (use -v to see invocation)
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
       "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
       "defconfig": "vendor/xiaomi/sdm660_defconfig",
       "branch": "lineage-20",

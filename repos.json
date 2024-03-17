@@ -4,7 +4,7 @@
       "name": "Kernel",
       "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
       "defconfig": "lavender-perf_defconfig",
-      "branch": "snow",
+      "branch": "elle",
       "device": "lavender"
     }, 
     "withKernelSU": true,

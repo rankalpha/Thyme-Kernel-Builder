@@ -1,3 +1,13 @@
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
+      "defconfig": "lavender_defconfig", // config file not existed!
+      "branch": "snow",
+      "device": "lavender"
+    }, 
+        
     // success
     {
     "kernelSource": {

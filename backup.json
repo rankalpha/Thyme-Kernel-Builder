@@ -186,7 +186,22 @@ make[1]: *** Waiting for unfinished jobs....
       "branch": "12.1",
       "device": "lavender"
     }, 
-        
+
+    // failed
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_lavender",
+      "defconfig": "lavender-perf_defconfig",
+      "branch": "13.0",
+      "device": "lavender"
+    }, 
+
+  VDSOL32   arch/arm64/kernel/vdso32/vdso.so.raw
+ld: cannot represent machine `arm'
+make[2]: *** [/home/runner/work/Thyme-Kernel-Builder/Thyme-Kernel-Builder/Kernel_lavender/Kernel/arch/arm64/kernel/vdso32/Makefile:147: arch/arm64/kernel/vdso32/vdso.so.raw] Error 1
+make[2]: *** Waiting for unfinished jobs....
+
     // failed
     {
     "kernelSource": {

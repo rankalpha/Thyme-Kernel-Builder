@@ -187,6 +187,16 @@ make[1]: *** Waiting for unfinished jobs....
       "device": "lavender"
     }, 
 
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
+      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_lavender",
+      "defconfig": "lavender-perf_defconfig",
+      "branch": "12.1",
+      "device": "lavender"
+    }, 
+        
     // failed
     {
     "kernelSource": {

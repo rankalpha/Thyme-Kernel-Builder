@@ -2,9 +2,9 @@
     {
     "kernelSource": {
       "name": "Kernel",
-      "repo": "https://github.com/PixelExperience-Devices/kernel_xiaomi_lavender",
+      "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
       "defconfig": "lavender_defconfig",
-      "branch": "thirteen",
+      "branch": "udc",
       "device": "lavender"
     }, 
     "withKernelSU": true,

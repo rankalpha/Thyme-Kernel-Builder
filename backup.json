@@ -2,6 +2,16 @@
     {
     "kernelSource": {
       "name": "Kernel",
+      "repo": "https://github.com/Rave-Project/kernel_xiaomi_lavender",
+      "defconfig": "lavender_defconfig",
+      "branch": "kernelsu",
+      "device": "lavender"
+    }, 
+        
+    // success
+    {
+    "kernelSource": {
+      "name": "Kernel",
       "repo": "https://github.com/Evolution-X-Devices/kernel_xiaomi_lavender",
       "defconfig": "lavender-perf_defconfig",
       "branch": "ten",
